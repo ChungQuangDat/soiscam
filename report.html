@@ -1,0 +1,148 @@
+<!-- Ctrl H để thay chữ nhiều dòng -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOISCAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/report.css">
+</head>
+<body>
+  <div id="fui-toast"></div>
+  <!-- images fixed -->
+     
+     <div class="effect-circle-1"></div>
+     <div class="effect-circle-2"></div>
+  <!-- end images fixed -->
+  
+   <!-- header -->
+   <header class="header fixed">
+     
+    <a href="index.html" class="header__logo">
+       <img src="./assets/images/logo.png" alt="logo" class="header__logo-img">
+       <span class="header__logo-name">Soi Scam</span>
+    </a>
+    <span class="header__open-menu">
+      <img src="./assets/images/Frame 1000004933.svg" alt="">
+     </span>
+    <!-- ul.header__nav-list>li.header__nav-items*3 -->
+    <ul class="header__nav-list">
+     <span class="header__close-menu">
+       <img src="./assets/images/Frame 1000004932.png" alt="">
+      </span>
+       <li class="header__nav items">
+            <a href="index.html" class="header__nav-link">Trang chủ</a>
+       </li>
+       <li class="header__nav items">
+            <a href="./scammers.html" class="header__nav-link">Scammer</a>
+       </li>
+       <li class="header__nav items">
+            <a href="./introduce.html" class="header__nav-link">Giới thiệu</a>
+       </li>
+       <a href="./report.html" class="btn-header btn__header-report">Gửi tố cáo</a>
+    </ul>
+    
+  </header>
+   <!-- endheader -->
+ 
+   <!-- Breadcrumb:đường dẫn điều hướng -->
+   <section class="breadcrumb">
+    <a href="index.html" class="breadcrumb-link">Trang chủ</a>
+    <img src="./assets/images/Vector.png" alt="image-icon" class="breadcrumb-icon">
+    <a href="./report.html" class="breadcrumb-link active">Gửi tố cáo</a>
+  </section>
+  <!-- endbreadcrum -->
+    
+  <!-- form report -->
+   <form id="form-report" class="form_report">
+   <h2 class="form-heading">Thông tin kẻ lừa đảo</h2>
+   <div class="form-group__wrap">
+       <div class="form-group">
+         <label for="nameScammer" class="form-title">Tên chủ tài khoản <span>*</span></label>
+         <input type="text" placeholder="Nhập tên chủ tài khoản...." name="nameScammer" id="nameScammer" class="form-input">
+         <p class="form-message"></div>
+       </div>
+       <div class="form-group">
+         <label for="phonescammerScammer" class="form-title"> Số điện thoại <span>*</span></label>
+         <input type="text" placeholder="Nhập số điện thoại...." name="phoneScammer" id="phoneScammer" class="form-input">
+         <p class="form-message"></div>
+       </div>
+   </div>
+   <div class="form-group__wrap">
+      <div class="form-group">
+        <label for="accountScammer" class="form-title">Số tài khoản <span>*</span></label>
+        <input type="text" placeholder="Nhập số tài khoản...." name="accountScammer" id="accountScammer" class="form-input">
+        <p class="form-message"></div>
+      </div>
+      <div class="form-group">
+        <label for="bankScammer" class="form-title"> Ngân hàng <span>*</span></label>
+        <input type="text" placeholder="Vui lòng nhập tên ngân hàng...." name="bankScammer" id="bankScammer" class="form-input">
+        <p class="form-message"></div>
+      </div>
+  </div>
+  <div class="form-group">
+      <textarea placeholder="Nội dung tố cáo" name="contentReport" id="contentReport" class="form-content"></textarea>
+      <p class="form-message"></div>
+  </div>
+  <div class="form-upload__wrap">
+    <div class="form-image__preview">
+      <div class="form-image__remove">
+         <img src="assets/images/Frame 6138.png" alt="">
+      </div>
+      <img src="" alt="" class="form-review__img">
+   </div> 
+  <div class="form-group form-upload__group">
+     <label for="uploadImage" class="form-upload">
+      <input type="file" name="uploadImage" id="uploadImage" class="form-upload__images" accept="image/*" multiple hidden>
+      <img src="/assets/images/Image@2x.png" alt="image-icon" class="form__upload-icon">
+      <span class="form-upload__text">Chọn ảnh</span>
+     </label>
+     <p class="form-message"></div>
+  </div>
+</div>
+
+<h2 class="form-heading">Xác thực người tố cáo</h2>
+<div class="form-group__wrap">
+   <div class="form-group">
+     <label for="nameScammer" class="form-title">Họ và tên <span>*</span></label>
+     <input type="text" placeholder="Nhập họ và tên...." name="nameSender" id="nameSender" class="form-input">
+     <p class="form-message"></div>
+   </div>
+   <div class="form-group">
+     <label for="phonescammerScammer" class="form-title"> Liên hệ (Zalo - Sđt) <span>*</span></label>
+     <input type="text" placeholder="Nhập số điện thoại...." name="phoneSender" id="phoneSender" class="form-input">
+     <p class="form-message"></div>
+   </div>
+</div>
+
+  <div class="form-action__group">
+   <div class="form-action__item">
+      <input type="radio" name="option" id="option-1" class="form-radio" value="Tôi là nạn nhân">
+      <label for="option" class="form-title">Tôi là nạn nhân</label>
+   </div>
+   <div class="form-action__item">
+      <input type="radio" name="option" id="option-2" class="form-radio"  value="Tôi là nạn nhân">
+      <label for="option" class="form-title">Tôi chỉ đăng hộ</label>
+   </div>
+  </div>
+
+  <button type="submit" class="btn form-report">Gửi tố cáo</button>
+  </form>
+<!-- end form report -->
+
+
+  <!-- JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/tuanduong1907/fui-validate@main/fui-validate.js"></script>
+   <script src="assets/js/base.js"></script>
+   <script src="/assets/js/report.js"></script>
+   <!-- End JS -->
+</body>
+</html>

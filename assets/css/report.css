@@ -1,0 +1,239 @@
+.btn__header-report{
+    border-radius: 12px;
+    background: var(--gradientColor);
+    color: var(--textBtnColor);
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+}
+
+.btn-header{
+    position: absolute;
+    right: 40px;
+}
+.breadcrumb{
+    margin-inline: 6%;
+    margin-top: 105px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.breadcrumb-link{
+    color: var(--subTextColor);
+    font-size: 14px;
+    transition: linear .2s;
+}
+
+.breadcrumb-link:hover{
+    color: var(--textColor);
+}
+
+.breadcrumb-link.active{
+    pointer-events: none;  /*cấm người dùng click vào*/
+    color: var(--textColor);
+}
+
+/*form report style */
+.form_report{
+    max-width: 830px;
+    margin-inline: auto;
+    margin-top: 4px;
+    padding: 80px;
+}
+.form-heading{
+    font-size: 30px;
+    font-weight: 800;
+    color: transparent;
+    background: var(--gradientColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+.form-group__wrap{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex:1;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-title{
+    font-weight: 500;
+    width: max-content;
+}
+
+.form-title span{
+    color: var(--redColor);
+}
+
+.form-content , .form-input{
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: var(--bgColor3);
+    border: none;
+    outline: none;
+    color: var(--textColor);
+}
+
+.form-content{
+    resize: none;
+    height: 64px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.form-upload__wrap{
+    display:flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.form-upload__group{
+    max-width: 128px;
+    width: 100px;
+    height: 114px;
+    border-radius: 8px;
+    background-color: var(--bgColor3);
+    position: relative;
+}
+
+.form-upload__group .form-message{
+    top: 100%;
+    text-align: center;
+}
+.form-upload{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.form-upload__text{
+    color: #94A3B8;
+    font-size: 14px;
+    
+}
+
+.form-image__preview{
+    width: 128px;
+    height: 114px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.form-review__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-image__remove{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 4px;
+    right: 4px;
+}
+
+.form-image__remove > *{
+    pointer-events: none;
+}
+
+.form-action__group{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-action__item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-radio{
+    width: 24px;
+    height: 24px;
+}
+
+.form-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #cccccc;
+}
+
+.btn{
+    margin-top: 40px;  /* Cách phần tử phía trên 40px */
+    margin-inline: auto; /* Căn giữa ngang */
+    display: block; /* Cho phép căn giữa bằng auto */
+}
+/* end form report style */
+
+
+/* responsive styles */
+/*mobile*/
+@media only screen and (max-width: 739px) {
+    .breadcrumb{
+        margin-top: var(--headerHeight);
+        padding-top: 16px;
+    }
+    .form-report{
+        max-width: 100%;
+        margin-top: 16px;
+        padding-inline: 16px;
+    }
+    .form-heading{
+        font-size: 24px;
+    }
+    .form-group__wrap{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .form-upload__wrap{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .form-image__preview,.form-upload__group{
+        max-width: 100%;
+        width: 100%;
+        height: 120px;
+    }
+    .form-action__group{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .btn-header{
+        position: static;
+        width: 60%;
+        
+    }
+    .btn__header-report{
+        text-align: center;
+    }
+    }
+/* end responsive styles */

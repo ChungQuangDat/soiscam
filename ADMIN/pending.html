@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soi Scam Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <div class="container-admin">
+        <section class="sidebar">
+            <a href="#" class="sidebar_logo">
+                <img src="../assets/images/logo.png" alt="">
+                Soi scam
+            </a>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="./Dashboard.html" class="sidebar__link">
+                        <span class="sidebar__link-item">
+                        <i class="fa-solid fa-users"></i>
+                        </span>
+                        Danh sách Scammer</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="./pending.html" class="sidebar__link active">
+                        <span class="sidebar__link-item">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                        </span>
+                        Đợi duyệt</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="./warning.html" class="sidebar__link">
+                        <span class="sidebar__link-item">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </span>
+                        Nội dung cảnh báo</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/" class="sidebar__link">
+                        <span class="sidebar__link-item">
+                            <i class="fa-solid fa-globe"></i>
+                        </span>
+                        Vào website</a>
+                </li>
+            </ul>
+        </section>
+        <section class="dashboard">
+            <!-- header dashboard -->
+            <header class="header-admin">
+                <h2 class="headeradmin-title">Quản lí kiểm duyệt</h2>
+                <div class="headerAdmin-info">
+                    <img src="../assets/images/avatar-2.png" alt="admin-avatar">
+                    <span class="headerAdmin-name">Admin</span>
+                    <span class="headerAdmin-icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                </div>
+            </header>
+            <!-- end header dashboard -->
+
+             <!-- dashboard content -->
+                <div class="dashboard-content">
+                    <!-- dashboard top -->
+                    <div class="dashboard-top">
+                        <div class="dashboard__top-heading">
+                        <h2 class="dashboard__top-title">Danh sách đợi duyệt</h2>
+                        <p class="dashboard__top-total">(Có 0 đơn đợi duyệt)</p>
+                    </div>
+                  <div class="dashboard-search">
+                    <form class="form-search">
+                        <input type="text" placeholder="Kiểm tra số tài khoản ngân hàng...." class="form-search__input">
+                        <button class="btn form-search__btn"  type="submit">
+                         <img src="../assets/images/search-icon.svg" alt="">
+                         <span>Tìm Kiếm</span>
+               
+                         </button>
+                      </form>
+                  </div>
+                </div>
+                <!-- end dashboard top -->
+                 <!-- dashboard table -->
+                  
+<div class="fui-table-ui-basic-linh table-wrap">
+    <table>
+      <thead class="dashboard-table__header">
+        <tr>
+          <th>ID</th>
+          <th>Chủ tài khoản</th>
+          <th>Số tài khoản</th>
+          <th>Ngân hàng</th>
+          <th>SĐT đối tượng</th>
+          <th>Người gửi đơn</th>
+          <th>Ngày gửi</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="dashboard-table__body">
+        
+      </tbody>
+    </table>
+  </div>
+                 <!-- end dashboard table -->
+            </div>
+             </section>
+             <!-- end dashboard -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="../assets/js/global.js"></script>
+    <script src="./js/pending.js"></script>
+</body>
+</html>

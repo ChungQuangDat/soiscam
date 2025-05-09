@@ -1,0 +1,248 @@
+/* Trang Fast UI */
+/* images-fixed */
+.images-fixed{
+    position: fixed;
+    top: 573px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.images-frame{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+/* end images-fixed */
+
+.content{
+   max-width:664px;
+   width: 100%;
+   margin-inline: auto;
+   padding-top: 96px;
+}
+.content__heading{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: transparent;
+    background: var(--gradientColor);
+    background-clip: text;  /*Chỉ định rằng phần nền chỉ áp dụng lên chữ chứ không phải cả phần tử*/
+    -webkit-background-clip: text;  /*Vì một số trình duyệt không hỗ trợ background-clip: text, nên cần thêm tiền tố -webkit- để đảm bảo hoạt động trên các trình duyệt như Chrome hoặc Safari.*/
+}
+.content__desc{
+    color: var(--subTextColor);
+    margin-top: 20px;
+    align-items: center;
+}
+
+
+
+/*Scammer List*/
+.alert-scam{
+    margin-top: 111px;
+    background-color: var(--bgColor2);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1)
+   }
+.alert-scam__custom{
+    margin-top: 60px;
+} 
+ .alert-scam__header{
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+   }
+
+.alert-scam__desc{
+    color: var(--subTextColor);
+    margin-top: 8px;
+}
+
+.scammer__ListWrap{
+    padding: 30px;
+}
+
+.scammers-list{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+}
+
+.scammers-item{
+    background-color: var(--bgColor3);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    user-select: none;
+}
+
+.scammers-item >* { /*Trỏ hết vào thằng con*/
+    pointer-events: none;
+}
+
+.scammer-name{
+    font-size: 16px;
+    font-weight: 600;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.scammer-date{
+    color: var(--subTextColor);
+}
+
+.scammers-item::before{
+    content: "";  /*Tạo một pseudo-element (::before) rỗng để thêm hiệu ứng. */
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    opacity: 0.1;
+    z-index: -1;  /*Đặt ra phía sau nội dung chính*/
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+
+.scammers-item:hover::before{
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+/*endScammerList*/
+
+/* warning style */
+.warning{
+    margin-top: 60px;
+
+}
+
+.warning-title{
+    text-align: center;
+}
+
+.warning-list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.warning-item{
+    background-color: var(--bgColor3);
+    border-radius: 16px;
+    padding: 16px;
+    backdrop-filter: blur(70px); /*backdrop-filter: blur(70px); vào một phần tử, bất cứ thứ gì ở phía sau nó sẽ bị làm mờ, giống như kính mờ.*/
+}
+
+
+
+.warning-header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.warning-header > *{
+    pointer-events: none;
+}
+
+.warning-title{
+    font-weight: 600px;
+    
+}
+
+.warning-header-icon{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.warning-content{
+  margin-left: 34px;
+  color: var(--subTextColor);
+  height: 0;
+  overflow: hidden;
+  transition: linear 0.2s;
+}
+
+.warning-content.active{
+    margin-top: 8px;
+    height: auto;
+
+}
+
+.warning-header-icon.active{
+     transform: rotate(90deg);
+     transition: transform linear 0.2s;
+}
+/* end warning style */
+
+/* reponsive styles */
+/* Mobile & Tablet */
+@media only screen and (max-width: 1023px){
+    .content{
+        padding-top: 0px;
+        max-width: 100%;
+    }
+    .content__heading{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .content__desc{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    .alert-scam{
+        margin-top: 40px;
+    }
+    .scammer__ListWrap{
+        padding: 16px;
+    }
+    .scammers-list{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .warning{
+        margin-top: 56px;
+    }
+    .images-fixed{
+        top: 30%;
+    }
+    
+}
+
+
+
+
+    /*  Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+     .content{
+        max-width: 500px;
+     }
+     .warning{
+        padding-bottom: 50px;
+     }
+    
+} 
+/* end responsive styles */
+

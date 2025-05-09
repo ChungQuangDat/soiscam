@@ -1,0 +1,193 @@
+<!-- Ctrl H để thay chữ nhiều dòng -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOISCAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- images fixed -->
+     <div class="images-fixed">
+      <img src="assets/images/shield.png" alt="" class="images-shield">
+      <img src="assets/images/Frame.png" alt="" class="images-frame">
+     </div>
+     <div class="effect-circle-1"></div>
+     <div class="effect-circle-2"></div>
+  <!-- end images fixed -->
+  
+   <!-- header -->
+   <header class="header fixed">
+     
+     <a href="index.html" class="header__logo">
+        <img src="./assets/images/logo.png" alt="logo" class="header__logo-img">
+        <span class="header__logo-name">Soi Scam</span>
+     </a>
+     <span class="header__open-menu">
+       <img src="./assets/images/Frame 1000004933.svg" alt="">
+      </span>
+     <!-- ul.header__nav-list>li.header__nav-items*3 -->
+     <ul class="header__nav-list">
+      <span class="header__close-menu">
+        <img src="./assets/images/Frame 1000004932.png" alt="">
+       </span>
+        <li class="header__nav items">
+             <a href="index.html" class="header__nav-link active">Trang chủ</a>
+        </li>
+        <li class="header__nav items">
+             <a href="./scammers.html" class="header__nav-link">Scammer</a>
+        </li>
+        <li class="header__nav items">
+             <a href="./introduce.html" class="header__nav-link">Giới thiệu</a>
+        </li>
+        <a href="./report.html" class="btn header__btn">Gửi tố cáo</a>
+     </ul>
+     
+   </header>
+   <!-- endheader -->
+   <div class="container">
+   <!-- Content -->
+     <section class="content">
+       <h1 class="content__heading">KIỂM TRA & TỐ CÁO
+        SCAMMER </h1>
+       <p class="content__desc">Website lưu trữ dữ liệu lừa đảo trên mxh mà không chịu bất kỳ hạn chế seach của một thuật toán nào trên Facebook
+       </p>
+       <form class="form-search">
+         <input type="text" placeholder="Kiểm tra số tài khoản ngân hàng...." class="form-search__input">
+         <button class="btn form-search__btn"  type="submit">
+          <img src="./assets/images/search-icon.svg" alt="">
+          <span>Tìm Kiếm</span>
+
+          </button>
+       </form>
+     </section>
+   <!-- EndContent -->
+   <!-- Scammer -->
+     <section class="alert-scam">
+      <div class="alert-scam__header">
+        <h2 class="alert-scam__title title"></h2>
+        <p class="alert-scam__desc">Có 0 cảnh báo</p>
+      </div>
+      <div class="scammer__ListWrap">
+        <div class="fui-loading-ring loading">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <ul class="scammers-list">
+      </div>
+        </ul>
+     </section>
+   <!-- EndScammer -->
+    <!-- Warning -->
+     <section class="warning">
+       <h2 class="warning-title">Một số kiểu lừa đảo online thường gặp</h2>
+        <ul class="warning-list">
+          <li class="warning-item">
+            <div class="warning-header">
+            <span class="warning-header-icon">
+            <img src="assets/images/arrow_right_ios.png" alt="icon">
+          </span>
+            <h4 class="warning-title">Lừa đảo qua điện thoại</h4>
+            </div>
+            <div class="warning-content">Kẻ gian giả danh công an, tòa án, ngân hàng... gọi điện đe dọa để ép bạn chuyển tiền.</div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo qua tin nhắn/SMS</h4>
+            </div>
+            <div class="warning-content">Gửi tin nhắn giả mạo trúng thưởng, cần xác minh tài khoản... kèm đường link lừa đảo.
+
+            </div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo qua email (phishing)</h4>
+            </div>
+            <div class="warning-content">Gửi email giả mạo ngân hàng, công ty... yêu cầu đăng nhập để đánh cắp thông tin.</div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo trên mạng xã hội</h4>
+            </div>
+            <div class="warning-content">Giả mạo người quen, mượn tiền, nhờ nạp card điện thoại, gửi link độc hại.</div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo đầu tư tài chính/tiền ảo</h4>
+            </div>
+            <div class="warning-content">Mời gọi đầu tư lợi nhuận cao, rút không được tiền hoặc bị "ôm tiền bỏ trốn".</div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo tuyển dụng việc nhẹ lương cao</h4>
+            </div>
+            <div class="warning-content">Hứa việc online dễ làm, yêu cầu đặt cọc, rồi mất liên lạc sau khi nhận tiền.</div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo vay tiền qua app</h4>
+            </div>
+            <div class="warning-content">App cho vay dễ dàng nhưng sau đó lãi suất cắt cổ, bị đe dọa, bôi nhọ.</div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo bằng mã QR/code độc hại</h4>
+            </div>
+            <div class="warning-content">Yêu cầu quét mã QR để nhận quà hay thanh toán, thực chất là lấy cắp thông tin.</div>
+          </li>
+          <li class="warning-item">
+            <div class="warning-header">
+              <span class="warning-header-icon">
+              <img src="assets/images/arrow_right_ios.png" alt="icon">
+              </span>
+              <h4 class="warning-title">Lừa đảo giả danh cơ quan nhà nước</h4>
+            </div>
+            <div class="warning-content">Gửi giấy mời, lệnh bắt giả mạo, yêu cầu chuyển tiền để "giải quyết".</div>
+          </li>
+        </ul>
+     </section>
+    <!-- End Warning -->
+    
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="./assets/js/global.js"></script>
+   <script src="assets/js/base.js"></script>
+   <script src="assets/js/index.js"></script>
+   <!-- End JS -->
+</body>
+</html>

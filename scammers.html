@@ -1,0 +1,96 @@
+<!-- Ctrl H để thay chữ nhiều dòng -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOISCAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- images fixed -->
+     
+     <div class="effect-circle-1"></div>
+     <div class="effect-circle-2"></div>
+  <!-- end images fixed -->
+  
+   <!-- header -->
+   <header class="header fixed">
+     
+    <a href="index.html" class="header__logo">
+       <img src="./assets/images/logo.png" alt="logo" class="header__logo-img">
+       <span class="header__logo-name">Soi Scam</span>
+    </a>
+    <span class="header__open-menu">
+      <img src="./assets/images/Frame 1000004933.svg" alt="">
+     </span>
+    <!-- ul.header__nav-list>li.header__nav-items*3 -->
+    <ul class="header__nav-list">
+     <span class="header__close-menu">
+       <img src="./assets/images/Frame 1000004932.png" alt="">
+      </span>
+       <li class="header__nav items">
+            <a href="index.html" class="header__nav-link">Trang chủ</a>
+       </li>
+       <li class="header__nav items">
+            <a href="./scammers.html" class="header__nav-link active">Scammer</a>
+       </li>
+       <li class="header__nav items">
+            <a href="./introduce.html" class="header__nav-link">Giới thiệu</a>
+       </li>
+       <a href="./report.html" class="btn header__btn">Gửi tố cáo</a>
+    </ul>
+    
+  </header>
+   <!-- endheader -->
+    <div class="container">
+      <!-- form search-->
+      <form class="form-search form-search__custom">
+        <input type="text" placeholder="Kiểm tra số tài khoản ngân hàng...." class="form-search__input">
+        <button class="btn form-search__btn"  type="submit">
+          <img src="./assets/images/search-icon.svg" alt="">
+          <span>Tìm Kiếm</span>
+
+          </button>
+      </form>
+    
+  <!-- End form search -->
+   <!-- Scammer -->
+     <section class="alert-scam alert-scam__custom">
+      <div class="alert-scam__header">
+        <h2 class="alert-scam__title title">Danh sách Scam</h2>
+        <p class="alert-scam__desc">Có 0 cảnh báo</p>
+      </div>
+      <div class="scammer__ListWrap">
+        <div class="fui-loading-ring loading">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <ul class="scammers-list"></ul>
+    </div>
+     </section>
+   <!-- EndScammer -->
+   
+    
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="./assets/js/global.js"></script>
+   <script src="assets/js/base.js"></script>
+   <script src="assets/js/base.js"></script>
+   <script src="assets/js/scammers.js"></script>
+   <!-- End JS -->
+</body>
+</html>

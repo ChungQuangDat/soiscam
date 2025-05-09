@@ -1,0 +1,35 @@
+.introduce__heading{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 130%;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.title-heading{
+   max-width:664px;
+   width: 100%;
+   margin-inline: auto;
+   padding-top: 96px;
+}
+
+.content-introduce{
+    max-width: 1193px;
+    height: 833px;
+    
+}
+
+h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border-left: 5px solid #007bff;
+}
+p{
+    font-size: 16px;
+    color: var(--subTextColor);
+    line-height: 1.6; /*Khoảng cách dòng*/
+    margin-bottom: 15px;
+}
+
